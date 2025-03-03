@@ -3,6 +3,7 @@ string Name = "";
 string KittyName = "";
 char Choices;
 char Start;
+bool end = false;
 
 void Firstchoice()
 {
@@ -55,6 +56,7 @@ void StartProgram()
 }
 void EndProgram()
 {
+    Console.WriteLine("");
     Console.WriteLine("Okay, ending program then");
     Console.WriteLine("Bye bye");
 }
@@ -241,7 +243,7 @@ void BananaWithLEGS()
     Console.WriteLine("Restart(A)           End program(B)");
     Console.WriteLine("");
 
-    Choices = char.ToLower(Console.ReadKey().KeyChar);
+    Start = char.ToLower(Console.ReadKey().KeyChar);
 
     if (Start == 'a')
     {
